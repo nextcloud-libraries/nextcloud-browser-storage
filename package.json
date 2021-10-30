@@ -30,7 +30,7 @@
     "@babel/core": "7.15.8",
     "@babel/plugin-proposal-class-properties": "^7.10.1",
     "@babel/preset-env": "7.15.8",
-    "@babel/preset-typescript": "7.15.0",
+    "@babel/preset-typescript": "7.16.0",
     "@nextcloud/browserslist-config": "^2.2.0",
     "babel-jest": "^27.2.5",
     "jest": "^27.2.2",
