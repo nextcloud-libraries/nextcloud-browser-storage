@@ -23,7 +23,7 @@
     "url": "https://github.com/nextcloud/nextcloud-browser-storage"
   },
   "dependencies": {
-    "core-js": "3.19.1"
+    "core-js": "3.19.2"
   },
   "devDependencies": {
     "@babel/cli": "7.16.0",
