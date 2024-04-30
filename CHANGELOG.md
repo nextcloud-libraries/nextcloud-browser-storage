@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file.
 
+## v0.4.0 - 2024-04-23
+### Added
+* feat: Add and run ESLint for code linting
+
+### Changed
+* Update NPM to latest LTS v10
+* Bump core-js to 3.37.0
+* Delete old unused CI
+* Updated development dependencies
+
 ## v0.3.0 - 2023-10-18
 **Full Changelog**: https://github.com/nextcloud-libraries/nextcloud-browser-storage/compare/v0.2.0...v0.3.0
 
