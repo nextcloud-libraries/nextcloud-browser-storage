@@ -1,3 +1,7 @@
+/**
+ * SPDX-FileCopyrightText: 2020 Nextcloud GmbH and Nextcloud contributors
+ * SPDX-License-Identifier: GPL-3.0-or-later
+ */
 import NextcloudStorage from './storage'
 
 export default class ScopedStorage implements NextcloudStorage {
