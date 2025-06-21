@@ -1,12 +1,14 @@
-/**
+/*
  * SPDX-FileCopyrightText: 2020 Nextcloud GmbH and Nextcloud contributors
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
-import StorageBuilder from './storagebuilder'
-import ScopedStorage from './scopedstorage'
+
+import ScopedStorage from './scopedstorage.ts'
+import StorageBuilder from './storagebuilder.ts'
 
 /**
  * Get the storage builder for an app
+ *
  * @param appId App ID to scope storage
  */
 export function getBuilder(appId: string): StorageBuilder {
@@ -15,12 +17,13 @@ export function getBuilder(appId: string): StorageBuilder {
 
 /**
  * Clear values from storage
+ *
  * @param storage The storage to clear
  * @param pred Callback to check if value should be cleared
  */
 function clearStorage(storage: Storage, pred?: (value: string) => boolean): void {
 	Object.keys(storage)
-		.filter(k => pred ? pred(k) : true)
+		.filter((k) => pred ? pred(k) : true)
 		.map(storage.removeItem.bind(storage))
 }
 
@@ -32,7 +35,7 @@ export function clearAll(): void {
 		window.sessionStorage,
 		window.localStorage,
 	]
-	storages.map(s => clearStorage(s))
+	storages.map((s) => clearStorage(s))
 }
 
 /**
@@ -43,5 +46,5 @@ export function clearNonPersistent(): void {
 		window.sessionStorage,
 		window.localStorage,
 	]
-	storages.map(s => clearStorage(s, k => !k.startsWith(ScopedStorage.GLOBAL_SCOPE_PERSISTENT)))
+	storages.map((s) => clearStorage(s, (k) => !k.startsWith(ScopedStorage.GLOBAL_SCOPE_PERSISTENT)))
 }

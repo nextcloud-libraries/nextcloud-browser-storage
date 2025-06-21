@@ -3,7 +3,6 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-// eslint-disable-next-line
 import { defineConfig } from 'vitest/config'
 
 export default defineConfig({

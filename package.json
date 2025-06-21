@@ -2,6 +2,16 @@
   "name": "@nextcloud/browser-storage",
   "version": "0.4.0",
   "description": "",
+  "keywords": [
+    "nextcloud"
+  ],
+  "homepage": "https://github.com/nextcloud-libraries/nextcloud-browser-storage#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nextcloud-libraries/nextcloud-browser-storage"
+  },
+  "license": "GPL-3.0-or-later",
+  "author": "Christoph Wurst",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
@@ -13,16 +23,9 @@
     "lint:fix": "eslint --fix",
     "test": "vitest"
   },
-  "keywords": [
-    "nextcloud"
+  "browserslist": [
+    "extends @nextcloud/browserslist-config"
   ],
-  "homepage": "https://github.com/nextcloud-libraries/nextcloud-browser-storage#readme",
-  "author": "Christoph Wurst",
-  "license": "GPL-3.0-or-later",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/nextcloud-libraries/nextcloud-browser-storage"
-  },
   "dependencies": {
     "core-js": "3.43.0"
   },
