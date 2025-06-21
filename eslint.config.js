@@ -3,6 +3,6 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-const { recommendedLibrary } = require('@nextcloud/eslint-config')
+import { recommendedLibrary } from '@nextcloud/eslint-config'
 
-module.exports = [...recommendedLibrary]
+export default [...recommendedLibrary]
