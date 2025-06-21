@@ -11,8 +11,7 @@
     "dev": "babel ./lib --out-dir dist --extensions '.ts,.tsx' --watch",
     "lint": "eslint lib *.js",
     "lint:fix": "eslint --fix lib",
-    "test": "jest",
-    "test:watch": "jest --watchAll"
+    "test": "vitest"
   },
   "keywords": [
     "nextcloud"
