@@ -3,10 +3,6 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-import { defineConfig } from 'vitest/config'
+const { recommendedLibrary } = require('@nextcloud/eslint-config')
 
-export default defineConfig({
-	test: {
-		environment: 'happy-dom',
-	},
-})
+module.exports = [...recommendedLibrary]

@@ -1,11 +1,11 @@
-/**
+/*
  * SPDX-FileCopyrightText: 2020 Nextcloud GmbH and Nextcloud contributors
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
-import NextcloudStorage from './storage'
+
+import type NextcloudStorage from './storage.ts'
 
 export default class ScopedStorage implements NextcloudStorage {
-
 	public static GLOBAL_SCOPE_VOLATILE = 'nextcloud_vol'
 	public static GLOBAL_SCOPE_PERSISTENT = 'nextcloud_per'
 	private scope: string
@@ -34,8 +34,7 @@ export default class ScopedStorage implements NextcloudStorage {
 
 	clear(): void {
 		Object.keys(this.wrapped)
-			.filter(key => key.startsWith(this.scope))
+			.filter((key) => key.startsWith(this.scope))
 			.map(this.wrapped.removeItem.bind(this.wrapped))
 	}
-
 }
