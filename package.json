@@ -11,8 +11,7 @@
     "dev": "babel ./lib --out-dir dist --extensions '.ts,.tsx' --watch",
     "lint": "eslint lib *.js",
     "lint:fix": "eslint --fix lib",
-    "test": "jest",
-    "test:watch": "jest --watchAll"
+    "test": "vitest"
   },
   "keywords": [
     "nextcloud"
@@ -36,11 +35,11 @@
     "@nextcloud/browserslist-config": "^3.0.0",
     "@nextcloud/eslint-config": "^8.3.0",
     "@types/node": "^20.8.6",
-    "babel-jest": "^30.0.2",
     "eslint": "^8.57.0",
-    "jest": "^29.2.1",
+    "happy-dom": "^18.0.1",
     "typedoc": "^0.28.1",
-    "typescript": "5.8.3"
+    "typescript": "5.8.3",
+    "vitest": "^3.2.4"
   },
   "browserslist": [
     "extends @nextcloud/browserslist-config"
@@ -51,8 +50,5 @@
   },
   "eslintConfig": {
     "extends": "@nextcloud/eslint-config/typescript"
-  },
-  "jest": {
-    "testEnvironment": "jsdom"
   }
 }
