@@ -3,9 +3,9 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-import type Storage from './storage.ts'
+import type Storage from './Storage.ts'
 
-import ScopedStorage from './scopedstorage.ts'
+import ScopedStorage from './ScopedStorage.ts'
 
 export default class StorageBuilder {
 	private appId: string

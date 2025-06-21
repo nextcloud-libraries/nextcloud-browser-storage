@@ -3,8 +3,8 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-import ScopedStorage from './scopedstorage.ts'
-import StorageBuilder from './storagebuilder.ts'
+import ScopedStorage from './ScopedStorage.ts'
+import StorageBuilder from './StorageBuilder.ts'
 
 /**
  * Get the storage builder for an app

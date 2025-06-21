@@ -5,7 +5,7 @@
 
 import { beforeEach, describe, expect, it } from 'vitest'
 import { clearAll } from '../lib/index.ts'
-import ScopedStorage from '../lib/scopedstorage.ts'
+import ScopedStorage from '../lib/ScopedStorage.ts'
 
 describe('clearAll', () => {
 	/** @type {Storage} */

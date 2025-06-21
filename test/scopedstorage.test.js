@@ -4,7 +4,7 @@
  */
 
 import { afterEach, beforeEach, describe, expect, it } from 'vitest'
-import ScopedStorage from '../lib/scopedstorage.ts'
+import ScopedStorage from '../lib/ScopedStorage.ts'
 
 describe('ScopedStorage', () => {
 	/** @type {Storage} */
