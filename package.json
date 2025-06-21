@@ -9,8 +9,8 @@
     "build:doc": "typedoc --excludeNotExported --mode file --out dist/doc lib/index.ts && touch dist/doc/.nojekyll",
     "check-types": "tsc --noEmit",
     "dev": "tsc --watch",
-    "lint": "eslint lib *.js",
-    "lint:fix": "eslint --fix lib",
+    "lint": "eslint",
+    "lint:fix": "eslint --fix",
     "test": "vitest"
   },
   "keywords": [
@@ -38,8 +38,5 @@
   "engines": {
     "node": "^20.0.0",
     "npm": "^10.0.0"
-  },
-  "eslintConfig": {
-    "extends": "@nextcloud/eslint-config/typescript"
   }
 }
