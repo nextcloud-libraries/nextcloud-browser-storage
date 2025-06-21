@@ -1,16 +1,21 @@
 {
+    "$schema": "https://json.schemastore.org/tsconfig",
     "compilerOptions": {
-        "target": "es5",
+        "target": "esnext",
         "module": "commonjs",
-        "declaration": true,
+        "moduleResolution": "node",
+        "lib": ["ESNext", "DOM"],
+
+        "esModuleInterop": true,
+        "rewriteRelativeImportExtensions": true,
+
         "outDir": "./dist",
+        "declaration": true,
+
+        "erasableSyntaxOnly": true,
+
         "strict": true,
-        "lib": [
-            "es6",
-            "dom"
-        ],
+        "skipLibCheck": true,
         "noImplicitAny": false,
-        "resolveJsonModule": true,
-        "esModuleInterop": true
     }
 }
