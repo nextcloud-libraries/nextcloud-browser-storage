@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-import type NextcloudStorage from './storage.ts'
+import type NextcloudStorage from './Storage.ts'
 
 export default class ScopedStorage implements NextcloudStorage {
 	public static GLOBAL_SCOPE_VOLATILE = 'nextcloud_vol'

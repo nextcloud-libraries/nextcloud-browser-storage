@@ -5,7 +5,7 @@
 
 import { beforeEach, describe, expect, it } from 'vitest'
 import { clearNonPersistent } from '../lib/index.ts'
-import ScopedStorage from '../lib/scopedstorage.ts'
+import ScopedStorage from '../lib/ScopedStorage.ts'
 
 describe('clearNonPersistent', () => {
 	/** @type {Storage} */
