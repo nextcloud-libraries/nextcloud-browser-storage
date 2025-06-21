@@ -3,9 +3,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-import type NextcloudStorage from './Storage.ts'
-
-export default class ScopedStorage implements NextcloudStorage {
+export default class ScopedStorage implements Storage {
 	public static GLOBAL_SCOPE_VOLATILE = 'nextcloud_vol'
 	public static GLOBAL_SCOPE_PERSISTENT = 'nextcloud_per'
 	private scope: string
@@ -20,12 +18,25 @@ export default class ScopedStorage implements NextcloudStorage {
 		return `${this.scope}${key}`
 	}
 
-	setItem(key: string, value: string): void {
-		this.wrapped.setItem(this.scopeKey(key), value)
+	get #keys() {
+		return Object.keys(this.wrapped)
+			.filter((key) => key.startsWith(this.scope))
+	}
+
+	get length(): number {
+		return this.#keys.length
+	}
+
+	key(index: number): string | null {
+		return this.#keys[index] ?? null
 	}
 
 	getItem(key: string): string | null {
 		return this.wrapped.getItem(this.scopeKey(key))
+	}
+
+	setItem(key: string, value: string): void {
+		this.wrapped.setItem(this.scopeKey(key), value)
 	}
 
 	removeItem(key: string): void {
@@ -33,8 +44,8 @@ export default class ScopedStorage implements NextcloudStorage {
 	}
 
 	clear(): void {
-		Object.keys(this.wrapped)
-			.filter((key) => key.startsWith(this.scope))
-			.map(this.wrapped.removeItem.bind(this.wrapped))
+		for (const key of this.#keys) {
+			this.wrapped.removeItem(key)
+		}
 	}
 }
