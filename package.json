@@ -5,10 +5,10 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "babel ./lib --out-dir dist --extensions '.ts,.tsx' --source-maps && tsc --emitDeclarationOnly",
+    "build": "tsc --build --clean && tsc",
     "build:doc": "typedoc --excludeNotExported --mode file --out dist/doc lib/index.ts && touch dist/doc/.nojekyll",
-    "check-types": "tsc",
-    "dev": "babel ./lib --out-dir dist --extensions '.ts,.tsx' --watch",
+    "check-types": "tsc --noEmit",
+    "dev": "tsc --watch",
     "lint": "eslint lib *.js",
     "lint:fix": "eslint --fix lib",
     "test": "vitest"
