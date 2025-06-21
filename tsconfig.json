@@ -2,9 +2,9 @@
     "$schema": "https://json.schemastore.org/tsconfig",
     "compilerOptions": {
         "target": "esnext",
-        "module": "commonjs",
-        "moduleResolution": "node",
-        "lib": ["ESNext", "DOM"],
+        "module": "nodenext",
+        "moduleResolution": "nodenext",
+        "lib": ["DOM", "ESNext"],
 
         "esModuleInterop": true,
         "rewriteRelativeImportExtensions": true,
