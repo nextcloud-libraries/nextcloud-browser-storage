@@ -27,11 +27,6 @@
     "core-js": "3.43.0"
   },
   "devDependencies": {
-    "@babel/cli": "7.27.2",
-    "@babel/core": "7.27.4",
-    "@babel/plugin-proposal-class-properties": "^7.10.1",
-    "@babel/preset-env": "7.27.2",
-    "@babel/preset-typescript": "7.27.1",
     "@nextcloud/eslint-config": "^8.3.0",
     "@types/node": "^20.8.6",
     "eslint": "^8.57.0",
