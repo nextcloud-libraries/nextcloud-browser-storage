@@ -39,7 +39,18 @@
     "vitest": "^3.2.4"
   },
   "engines": {
-    "node": "^20.0.0",
-    "npm": "^10.0.0"
+    "node": "^24 || ^22 || ^20"
+  },
+  "devEngines": {
+    "runtime": {
+      "name": "node",
+      "version": "^22",
+      "onFail": "error"
+    },
+    "packageManager": {
+      "name": "npm",
+      "version": "^10",
+      "onFail": "error"
+    }
   }
 }
