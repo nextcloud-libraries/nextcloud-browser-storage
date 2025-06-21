@@ -26,9 +26,6 @@
   "browserslist": [
     "extends @nextcloud/browserslist-config"
   ],
-  "dependencies": {
-    "core-js": "3.43.0"
-  },
   "devDependencies": {
     "@nextcloud/eslint-config": "^9.0.0-rc.2",
     "@types/node": "^24.0.3",
