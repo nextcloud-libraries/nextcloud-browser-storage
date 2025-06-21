@@ -17,11 +17,11 @@
   "scripts": {
     "build": "tsc --build --clean && tsc",
     "build:doc": "typedoc --excludeNotExported --mode file --out dist/doc lib/index.ts && touch dist/doc/.nojekyll",
-    "check-types": "tsc --noEmit",
     "dev": "tsc --watch",
     "lint": "eslint",
     "lint:fix": "eslint --fix",
-    "test": "vitest"
+    "test": "vitest",
+    "ts:check": "tsc --noEmit"
   },
   "browserslist": [
     "extends @nextcloud/browserslist-config"
