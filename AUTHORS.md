@@ -1,5 +1,5 @@
 <!--
-  - SPDX-FileCopyrightText: 2015 Nextcloud GmbH and Nextcloud contributors
+  - SPDX-FileCopyrightText: 2025 Nextcloud GmbH and Nextcloud contributors
   - SPDX-License-Identifier: GPL-3.0-or-later
 -->
 # Authors
