@@ -11,7 +11,7 @@
     "url": "https://github.com/nextcloud-libraries/nextcloud-browser-storage"
   },
   "license": "GPL-3.0-or-later",
-  "author": "Christoph Wurst",
+  "author": "Nextcloud GmbH and Nextcloud contributors",
   "type": "module",
   "exports": {
     ".": {
