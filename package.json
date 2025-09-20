@@ -51,10 +51,12 @@
       "version": "^22",
       "onFail": "error"
     },
-    "packageManager": {
-      "name": "npm",
-      "version": "^10",
-      "onFail": "error"
-    }
+    "packageManager": [
+      {
+        "name": "npm",
+        "version": "^10.5.2",
+        "onFail": "error"
+      }
+    ]
   }
 }
