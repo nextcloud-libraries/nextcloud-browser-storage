@@ -37,7 +37,7 @@
     "@nextcloud/eslint-config": "^9.0.0-rc.2",
     "@types/node": "^24.0.3",
     "eslint": "^9.29.0",
-    "happy-dom": "^18.0.1",
+    "happy-dom": "^19.0.2",
     "typedoc": "^0.28.1",
     "typescript": "5.9.3",
     "vitest": "^3.2.4"
