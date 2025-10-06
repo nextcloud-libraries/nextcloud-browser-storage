@@ -1,7 +1,7 @@
 {
   "name": "@nextcloud/browser-storage",
-  "version": "0.4.0",
-  "description": "",
+  "version": "0.5.0",
+  "description": "Browser storage (e.g. local storage) abstraction for Nextcloud apps",
   "keywords": [
     "nextcloud"
   ],

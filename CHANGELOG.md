@@ -6,6 +6,22 @@
 
 All notable changes to this project will be documented in this file.
 
+## v0.5.0 - 2025-05-07
+### Changed
+* chore: modernize package and move to ESM package [\#563](https://github.com/nextcloud-libraries/nextcloud-browser-storage/pull/563) \([susnux](https://github.com/susnux)\)
+* chore(deps): remove core-js [\#564](https://github.com/nextcloud-libraries/nextcloud-browser-storage/pull/564) \([ShGKme](https://github.com/ShGKme)\)
+* refactor: rename modules to consist with the primary export [\#562](https://github.com/nextcloud-libraries/nextcloud-browser-storage/pull/562) \([ShGKme](https://github.com/ShGKme)\)
+* Add SPDX header  [\#428](https://github.com/nextcloud-libraries/nextcloud-browser-storage/pull/428) \([AndyScherzinger](https://github.com/AndyScherzinger)\)
+* chore: migrate from Jest to Vitest [\#556](https://github.com/nextcloud-libraries/nextcloud-browser-storage/pull/556) \([ShGKme](https://github.com/ShGKme)\)
+* Update dependabot-approve-merge.yml from org [\#447](https://github.com/nextcloud-libraries/nextcloud-browser-storage/pull/447) \([AndyScherzinger](https://github.com/AndyScherzinger)\)
+* chore: build with `tsc` instead of `babel` [\#557](https://github.com/nextcloud-libraries/nextcloud-browser-storage/pull/557) \([ShGKme](https://github.com/ShGKme)\)
+* chore: bump ESLint from 8 to 9 with new @nextcloud/eslint-config@9 [\#558](https://github.com/nextcloud-libraries/nextcloud-browser-storage/pull/558) \([ShGKme](https://github.com/ShGKme)\)
+* chore: update workflows from organization [\#560](https://github.com/nextcloud-libraries/nextcloud-browser-storage/pull/560) \([susnux](https://github.com/susnux)\)
+* chore(package.json): replace check-types with ts:check [\#561](https://github.com/nextcloud-libraries/nextcloud-browser-storage/pull/561) \([ShGKme](https://github.com/ShGKme)\)
+* chore(package.json): add `devEngines` and fix `engines` [\#559](https://github.com/nextcloud-libraries/nextcloud-browser-storage/pull/559) \([ShGKme](https://github.com/ShGKme)\)
+* chore: provide authors in AUTHORS.md [\#566](https://github.com/nextcloud-libraries/nextcloud-browser-storage/pull/566) \([susnux](https://github.com/susnux)\)
+* ci: update npm-publish.yml workflow from template [\#567](https://github.com/nextcloud-libraries/nextcloud-browser-storage/pull/567) \([susnux](https://github.com/susnux)\)
+
 ## v0.4.0 - 2024-04-23
 ### Added
 * feat: Add and run ESLint for code linting
