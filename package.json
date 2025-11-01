@@ -40,7 +40,7 @@
     "happy-dom": "^20.0.0",
     "typedoc": "^0.28.1",
     "typescript": "5.9.3",
-    "vitest": "^3.2.4"
+    "vitest": "^4.0.6"
   },
   "engines": {
     "node": "^24 || ^22 || ^20"
