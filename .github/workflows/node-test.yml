@@ -3,24 +3,30 @@
 # https://github.com/nextcloud-libraries/.github
 # https://docs.github.com/en/actions/learn-github-actions/sharing-workflows-with-your-organization
 #
-# SPDX-FileCopyrightText: 2021-2024 Nextcloud GmbH and Nextcloud contributors
+# SPDX-FileCopyrightText: 2023-2024 Nextcloud GmbH and Nextcloud contributors
 # SPDX-License-Identifier: MIT
 
-name: Node
+name: Node tests
 
-on: pull_request
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+      - master
+      - stable*
 
 permissions:
   contents: read
 
 concurrency:
-  group: node-${{ github.head_ref || github.run_id }}
+  group: node-tests-${{ github.head_ref || github.run_id }}
   cancel-in-progress: true
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
-    name: node-build
+    name: node-tests
 
     steps:
       - name: Checkout
@@ -40,16 +46,22 @@ jobs:
       - name: Set up npm
         run: npm i -g 'npm@${{ steps.versions.outputs.package-manager-version }}'
 
-      - name: Validate package-lock.json # See https://github.com/npm/cli/issues/4460
-        run: |
-          npm i -g npm-package-lock-add-resolved@1.1.4
-          npm-package-lock-add-resolved
-          git --no-pager diff --exit-code
-
       - name: Install dependencies & build
         env:
           CYPRESS_INSTALL_BINARY: 0
-          PUPPETEER_SKIP_DOWNLOAD: true
         run: |
           npm ci
           npm run build --if-present
+
+      - name: Test
+        run: npm run test --if-present
+
+      - name: Test and process coverage
+        run: npm run test:coverage --if-present
+
+      - name: Collect coverage
+        uses: codecov/codecov-action@5a1091511ad55cbe89839c7260b706298ca349f7 # v5.5.1
+        with:
+          files: ./coverage/lcov.info
+        env:
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
