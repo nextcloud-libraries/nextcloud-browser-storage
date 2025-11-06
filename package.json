@@ -50,13 +50,13 @@
   "devEngines": {
     "runtime": {
       "name": "node",
-      "version": "^22",
+      "version": "^24",
       "onFail": "error"
     },
     "packageManager": [
       {
         "name": "npm",
-        "version": "^10.5.2",
+        "version": "^11.3.0",
         "onFail": "error"
       }
     ]
