@@ -4,7 +4,7 @@
  */
 
 import { describe, expect, it } from 'vitest'
-import StorageBuilder from '../lib/ScopedStorage.ts'
+import StorageBuilder from '../lib/StorageBuilder.ts'
 
 describe('StorageBuilder', () => {
 	it('build a session storage', () => {

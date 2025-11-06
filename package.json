@@ -27,7 +27,8 @@
     "dev": "tsc --watch",
     "lint": "eslint",
     "lint:fix": "eslint --fix",
-    "test": "vitest",
+    "test": "vitest run",
+    "test:coverage": "vitest run --coverage",
     "ts:check": "tsc --noEmit"
   },
   "browserslist": [
@@ -36,11 +37,12 @@
   "devDependencies": {
     "@nextcloud/eslint-config": "^9.0.0-rc.2",
     "@types/node": "^24.0.3",
+    "@vitest/coverage-v8": "^4.0.7",
     "eslint": "^9.29.0",
     "happy-dom": "^20.0.0",
     "typedoc": "^0.28.1",
     "typescript": "5.9.3",
-    "vitest": "^3.2.4"
+    "vitest": "^4.0.7"
   },
   "engines": {
     "node": "^24 || ^22 || ^20"
