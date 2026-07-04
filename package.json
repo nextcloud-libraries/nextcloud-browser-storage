@@ -35,7 +35,7 @@
     "extends @nextcloud/browserslist-config"
   ],
   "devDependencies": {
-    "@nextcloud/eslint-config": "^9.0.0-rc.9",
+    "@nextcloud/eslint-config": "^9.0.0",
     "@types/node": "^26.0.0",
     "@vitest/coverage-v8": "^4.1.9",
     "eslint": "^10.5.0",
