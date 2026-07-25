@@ -41,7 +41,7 @@
     "eslint": "^10.8.0",
     "happy-dom": "^20.11.1",
     "typedoc": "^0.28.20",
-    "typescript": "5.9.3",
+    "typescript": "7.0.2",
     "vitest": "^4.0.7"
   },
   "engines": {
