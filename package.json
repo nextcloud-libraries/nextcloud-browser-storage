@@ -39,7 +39,7 @@
     "@types/node": "^26.6.1",
     "@vitest/coverage-v8": "^4.1.11",
     "eslint": "^10.10.0",
-    "happy-dom": "^20.14.0",
+    "happy-dom": "^20.14.5",
     "typedoc": "^0.28.20",
     "typescript": "5.9.3",
     "vitest": "^4.0.7"
